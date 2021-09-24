@@ -1,0 +1,59 @@
+﻿<Window x:Class="GalleryWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GalleryWPF" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Gallery" Name="mainWindow" MinHeight="350" MinWidth="200" Height="450" Width="600">
+    <Window.Resources>
+        <sys:Double x:Key="imgSize">150</sys:Double>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Background="White">
+            <MenuItem Header="File">
+                <MenuItem Header="New"/>
+                <MenuItem Header="Open"/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Save as"/>
+                <MenuItem Header="Exit" Click="MenuItem_Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Add file" Click="MenuItem_AddFile_Click"/>
+                <MenuItem Header="Add folder"/>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="Small icons" Click="MenuItem_SmallIcons_Click"/>
+                <MenuItem Header="Medium icons" Click="MenuItem_MediumIcons_Click"/>
+                <MenuItem Header="Large icons" Click="MenuItem_LargeIcons_Click"/>
+            </MenuItem>
+            <MenuItem Header="About"/>
+        </Menu>
+        <Line Stroke="DarkGray" StrokeThickness="0.5" X1="{Binding ElementName=mainWindow, Path=Width}" Y1="19" Y2="19"/>
+
+        <Grid Grid.Row="1">
+            <ListBox DragEnter="ListViewImages_DragEnter" Drop="ListViewImages_Drop" AllowDrop="True" x:Name="listViewImages" MouseDoubleClick="ListViewImages_MouseDoubleClick" ItemsSource="{Binding Images}" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.IsSharedSizeScope="True">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Name="grh" Orientation="Horizontal"></WrapPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="{DynamicResource imgSize}" Width="{DynamicResource imgSize}" >
+                            <Image Margin="10" x:Name="img" Stretch="Fill" Source="{Binding ImagePath}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Frame x:Name="ImageFrame"/>
+        </Grid>
+
+    </Grid>
+</Window>

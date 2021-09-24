@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\bin\Debug\GalleryWPF.exe.config
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\bin\Debug\GalleryWPF.exe
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\bin\Debug\GalleryWPF.pdb
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\MainWindow.g.cs
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\App.g.cs
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF_MarkupCompile.cache
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF_MarkupCompile.lref
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\MainWindow.baml
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF.g.resources
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF.Properties.Resources.resources
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF.csproj.GenerateResource.cache
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF.exe
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\GalleryWPF.pdb
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\ImagePage.g.cs
+C:\Users\user\source\repos\GalleryWPF\GalleryWPF\obj\Debug\ImagePage.baml
