@@ -36,7 +36,7 @@ namespace GalleryWPF
         private void PlayImages()
         {
             dispatcherTimer.Start();
-            dispatcherTimer.Interval = new TimeSpan(2000);
+            dispatcherTimer.Interval = new TimeSpan(0,0,0,2);
             if (imgCurrentIndex != imgLastIndex)
             {
                 fullImage.Source = new BitmapImage(new Uri(images[imgCurrentIndex + 1].ImagePath, UriKind.RelativeOrAbsolute));
